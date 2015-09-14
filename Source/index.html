@@ -1,0 +1,18 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+</head>
+<body>
+    Q: <strong id="question"></strong><br />
+    A: <span id="answer"></span>
+    <script src="http://chancejs.com/chance.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/mathjs/1.6.0/math.min.js"></script>
+    <script src="mathgen.js"></script>
+    <script type="text/javascript">
+        var exp = generateExpression(5);
+        document.getElementById("question").innerText = exp.question;
+        document.getElementById("answer").innerText = exp.answer;
+    </script>
+</body>
+</html>
